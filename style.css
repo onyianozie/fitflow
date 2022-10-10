@@ -147,10 +147,10 @@ li{
 }
 
 .badge{
-    width: 50px;
+    width: 70px;
     position: absolute;
     left: 0;
-    top: 20px;
+    top: 15px;
 }
 
 /* Our Space Section */
@@ -316,8 +316,7 @@ textarea{
 /* Happy Members Testimonials */
 
 .test-cont{
-    margin: 40px 0;
-    padding: 50px 0;
+    margin: 50px 0;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -416,7 +415,13 @@ footer{
 
 
 @media (max-width: 500px) {
+    .test-content{
+        width: 100%;
 
+    }
+    .btn-form{
+        width: 100%;
+    }
 
     h1{
         text-align:center;
@@ -437,14 +442,9 @@ footer{
     }
 
     .boxFont{
-        display:none;
+
     }
     
-    .boxFont p{
-        font-weight: bold;
-        font-size: 45px;
-        text-align: center;
-    }
 
     .img-divider{
         object-fit: cover;
@@ -457,11 +457,18 @@ footer{
     h3{
         font: 28px;
     }
+    .boxFont p{
+
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    
    
 
 }
 
-@media (max-width: 680px){
+@media (max-width: 683px){
 
 
     .footertop-cont{
@@ -489,6 +496,13 @@ footer{
     .footer-badge{
         width: 15%;
     }
+    .boxFont
+    {
+        height: auto;
+        width: 40%;
+        top: 80%;
+        left: 100px;
+    }
    
 
 }
@@ -511,19 +525,30 @@ footer{
         padding-bottom: 50px;
     }
 
+    .boxFont p{
+        font-size: 30px;
+    }
+
 }
 
 @media (max-width: 1050px){
     .ourSpaceContent{
-        display: block;
-        width: 50%;
+        flex-direction: column;
         margin-top: 20px;
-        
-    }
-    .ourSpaceContent{
         width: 100%;
     }
-
+  
+    .boxFont{
+        height: auto;
+        width: 35%;
+        top: 75%;
+        left: 130px;
+        
+    }
+    .exercisesCont{
+        margin-top: 50px;
+    }
+   
     .cardL{
         width: 100%;
         /* align-items: center;
@@ -531,7 +556,9 @@ footer{
     }
 
     .cardR{
-        display: none;
+        width: 60%;
+        margin-top:50px;
+        align-self: flex-end
     }
 
     .navMenu{
