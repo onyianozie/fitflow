@@ -76,9 +76,12 @@ button{
     cursor: pointer;
     border: none;
     transition: all 0.;
-
 }
 
+a{
+    text-decoration: none;
+    color: #9E9DA6;
+}
 
 
 /* Navigaton Section */
@@ -305,8 +308,8 @@ textarea{
 }
 
 .btn-form{
-    width: 27%;
     margin-top: 20px;
+    
 }
 
 
@@ -346,50 +349,70 @@ textarea{
 }
 
 /* Image Divider */
-footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    padding: 50px 0 ;
+
+.img-div{
+    width: 100%;
+    max-width:100%
 }
 .img-divider{
+    object-fit: cover;
+    padding: 20px 0;
+    width: 100%;
+}
+
+ /* Footer */
+
+footer{
     width: 100%;
     max-width: 100%;
-    aspect-ratio: 2 / 1;
-    padding: 20px 0;
-}
-.footer-menu{
-    display: flex;
-    gap: 5rem;
+    height: auto;
+
 }
 
-.footer-links{
+.footertop-cont{
     display: flex;
-    flex-direction: column;
-}
-
-.footer-links li{
-    margin: 10px 0 0 0;
-    color: #9E9DA6;
-    font-size: 20px;
+    justify-content: space-between;
+    margin: 30px 0;
+    padding: 30px 0;
+    border-bottom: 2px solid #9E9DA6;
+    align-items: center;
 }
 
 .footer-badge{
-    width: 30%;
-}
-footer h4{
-    margin-bottom: 20px;
+    width: 50%;
+    margin-bottom:20px;
 }
 
-p{
-    font-weight:400;
-    font-size: 20px;
-    line-height: 1.9em;
+.footer-menu{
+    display: flex;
+    gap: 100px;
+    padding-bottom: 40px;
+}
+.footer-nav{
+    display: flex;
+    flex-direction: column;
+}
+.footer-links{
+    flex-direction: column;
 }
 
-/* mobile responsiveness */
+.footer-left{
+    gap: 10px;
+}
+
+.footer-links li{
+    margin: 30px 0 0 0;
+}
+
+.sign{
+    color: #9E9DA6 ;
+    padding-bottom: 40px;
+}
 
 
+
+
+/* Mobile Responsiveness */
 
 
 @media (max-width: 500px) {
@@ -400,8 +423,12 @@ p{
         font-size: 58px;
     }
 
+    h2{
+        font-size: 38px;
+    }
+
     .headerContent p{
-        font-size: 14px !important;
+        font-size: 14px;
     }
 
     .ourSpaceContent{
@@ -419,17 +446,88 @@ p{
         text-align: center;
     }
 
+    .img-divider{
+        object-fit: cover;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+    h3{
+        font: 28px;
+    }
+   
+
+}
+
+@media (max-width: 680px){
+
+
+    .footertop-cont{
+        flex-direction: column;
+        width: 100%;
+        gap: 60px;
+    }
+
+    .footer-menu{
+        flex-direction: column;
+        align-items:flex-start;
+        gap: 60px;
+    } 
+    
+    .footer-links{
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 60px;
+        
+    }
+
+    .sign{
+        text-align: center;
+    }
+    .footer-badge{
+        width: 15%;
+    }
+   
+
+}
+
+@media (max-width:710px){
+    .arrow{
+        position: absolute;
+        right: 10px;
+        bottom: -10px;
+        width: 20%;
+    }
+    .footertop-cont{
+        align-items:flex-start;
+    }
+    .footer-left{
+        border-bottom: 2px solid #9E9DA6;
+        width: 100%;
+    }
+    .footer-left p:nth-child(3){
+        padding-bottom: 50px;
+    }
+
 }
 
 @media (max-width: 1050px){
     .ourSpaceContent{
         display: block;
+        width: 50%;
+        margin-top: 20px;
+        
+    }
+    .ourSpaceContent{
+        width: 100%;
     }
 
     .cardL{
         width: 100%;
-        align-items: center;
-        text-align: center;
+        /* align-items: center;
+        text-align: center; */
     }
 
     .cardR{
@@ -454,7 +552,7 @@ p{
         gap: 1.1rem;
         grid-template-columns: repeat(1, 1fr)
     }
- 
+
   
 
 }
