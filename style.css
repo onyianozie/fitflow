@@ -441,11 +441,6 @@ footer{
         width: 100%;
     }
 
-    .boxFont{
-
-    }
-    
-
     .img-divider{
         object-fit: cover;
     }
@@ -470,6 +465,11 @@ footer{
 
 @media (max-width: 683px){
 
+    .badge{
+        width: 50px;
+        left: -15px;
+        top: 15px;
+    }
 
     .footertop-cont{
         flex-direction: column;
